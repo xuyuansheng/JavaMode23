@@ -1,7 +1,7 @@
 #*.classpath
 #*.project
 #install.bat
-#/target
+/target
 #*.settings
 #target
 #.idea
