@@ -5,6 +5,10 @@ package com.immoc.strategy;
  * 橡胶呀
  */
 public class RubberDuck extends Duck {
+    public RubberDuck() {
+        super.setFlyingStrategy(new FlyingWithWing());
+    }
+
     @Override
     public void display() {
         System.out.println("我全身发黄,嘴巴很红!");
@@ -14,7 +18,7 @@ public class RubberDuck extends Duck {
      *  橡胶鸭的叫声不同
      */
     @Override
-    void quack() {
+    public void quack() {
         System.out.println("嘎~嘎~嘎~");
     }
 }

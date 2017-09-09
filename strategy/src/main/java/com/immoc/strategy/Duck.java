@@ -9,7 +9,7 @@ public abstract class Duck {
     /**
      * 通用的行为,直接实现
      */
-    void quack() {
+    public void quack() {
         System.out.println("嘎嘎嘎");
     }
 

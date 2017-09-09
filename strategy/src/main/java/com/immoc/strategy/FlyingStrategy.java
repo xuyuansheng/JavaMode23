@@ -5,6 +5,6 @@ package com.immoc.strategy;
  */
 public interface FlyingStrategy {
     //执行飞行动作
-    public void  performFly();
+     void  performFly();
 
 }

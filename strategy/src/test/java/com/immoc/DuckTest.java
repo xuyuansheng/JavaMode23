@@ -1,9 +1,6 @@
 package com.immoc;
 
-import com.immoc.strategy.Duck;
-import com.immoc.strategy.MallardDuck;
-import com.immoc.strategy.RedheadDuck;
-import com.immoc.strategy.RubberDuck;
+import com.immoc.strategy.*;
 import org.junit.Test;
 
 /**
@@ -13,12 +10,16 @@ public class DuckTest {
 
     @Test
     public void duckTest() {
-        Duck duck = new RubberDuck();
+//        Duck duck = new RubberDuck();
 //        Duck duck = new RedheadDuck();
 //        Duck duck = new MallardDuck();
-//        Duck duck = new RubberDuck();
+        Duck duck = new BigYellowDuck();
+        System.out.println("************************************");
+        duck.display();
+        duck.quack();
+        duck.fly();
+        System.out.println("************************************");
 
-        
 
 
     }
