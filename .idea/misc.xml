@@ -7,6 +7,8 @@
         <option value="$PROJECT_DIR$/结构型设计模式/adapter/pom.xml" />
         <option value="$PROJECT_DIR$/行为型设计模式/strategy/pom.xml" />
         <option value="$PROJECT_DIR$/singleton/pom.xml" />
+        <option value="$PROJECT_DIR$/创建型设计模式/abstractFactory/pom.xml" />
+        <option value="$PROJECT_DIR$/创建型设计模式/singleton/pom.xml" />
       </list>
     </option>
   </component>
