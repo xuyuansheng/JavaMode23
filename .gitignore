@@ -5,6 +5,7 @@
 #*.settings
 #target
 /.idea
+.idea
 *.iml
 #.svn
 #node_modules
