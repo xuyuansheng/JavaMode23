@@ -2,9 +2,9 @@ package com.immoc.singleton;
 
 import junit.framework.TestCase;
 
-public class EnumSingletonsTest extends TestCase {
+public class EnumSingletonTest extends TestCase {
 
     public void testGetInstance() {
-        EnumSingletons.INSTANCE.getInstance();
+        System.out.println(EnumSingleton.Day.FRIDAY);
     }
 }
