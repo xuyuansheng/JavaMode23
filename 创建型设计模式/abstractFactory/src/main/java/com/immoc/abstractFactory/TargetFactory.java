@@ -8,6 +8,7 @@ import org.w3c.dom.views.AbstractView;
 
 /**
  * 具体的工厂类，生产目标产品
+ * 这个工厂生产的是第一类别的产品TargetInterface，实现了抽象工厂的getInstance方法
  */
 public class TargetFactory extends AbstractFactory {
     public TargetInterface getInstance(String param) {
