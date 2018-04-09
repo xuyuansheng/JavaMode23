@@ -10,6 +10,8 @@
         <option value="$PROJECT_DIR$/创建型设计模式/abstractFactory/pom.xml" />
         <option value="$PROJECT_DIR$/创建型设计模式/singleton/pom.xml" />
         <option value="$PROJECT_DIR$/创建型设计模式/builder/pom.xml" />
+        <option value="$PROJECT_DIR$/创建型设计模式/prototyppe/pom.xml" />
+        <option value="$PROJECT_DIR$/结构型设计模式/bridge/pom.xml" />
       </list>
     </option>
   </component>
