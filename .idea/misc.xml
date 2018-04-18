@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/创建型设计模式/prototyppe/pom.xml" />
         <option value="$PROJECT_DIR$/结构型设计模式/bridge/pom.xml" />
         <option value="$PROJECT_DIR$/结构型设计模式/filter/pom.xml" />
+        <option value="$PROJECT_DIR$/结构型设计模式/composite/pom.xml" />
       </list>
     </option>
   </component>
