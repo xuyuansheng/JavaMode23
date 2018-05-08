@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/结构型设计模式/filter/pom.xml" />
         <option value="$PROJECT_DIR$/结构型设计模式/composite/pom.xml" />
         <option value="$PROJECT_DIR$/结构型设计模式/decorator/pom.xml" />
+        <option value="$PROJECT_DIR$/结构型设计模式/facade/pom.xml" />
       </list>
     </option>
   </component>
