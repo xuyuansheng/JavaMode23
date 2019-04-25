@@ -1,0 +1,89 @@
+@startuml
+
+
+skinparam classAttributeIconSize 0
+
+
+interface Gardener{
+   +Fruit fruitFactory(String name)
+   +Veggie veggieFactory(String name)
+ }
+note right of Gardener : 抽象工厂类
+
+class NorthernGardener{
+   +Fruit fruitFactory(String name)
+   +Veggie veggieFactory(String name)
+ }
+NorthernGardener ..|> Gardener:实现
+note left of NorthernGardener: 具体工厂类,北方园丁
+
+
+class TropicalGardener {
+   +Fruit fruitFactory(String name)
+   +Veggie veggieFactory(String name)
+ }
+ Gardener <|... TropicalGardener:实现
+note bottom of TropicalGardener: 具体工厂类,热带园丁
+
+interface Veggie{
+	+void grow()
+	+void harvest()
+	+void plant()
+}
+note right  of Veggie: 抽象产品,蔬菜
+
+ class NorthernVeggie {
+    -String name
+    +void grow()
+ 	+void harvest()
+ 	+void plant()
+ }
+NorthernVeggie ..|> Veggie :实现
+NorthernGardener .>NorthernVeggie:创建
+note right  of NorthernVeggie: 蔬菜的具体产品,北方蔬菜,属于北方这个产品族,使用时被北方园丁这个工厂创建
+
+
+
+ class TropicalVeggie{
+    -String name
+    +void grow()
+ 	+void harvest()
+ 	+void plant()
+ }
+ Veggie  <|... TropicalVeggie:实现
+ TropicalGardener .>TropicalVeggie:创建
+note bottom  of TropicalVeggie: 蔬菜的具体产品,热带蔬菜,属于热带这个产品族,使用时被热带园丁这个工厂创建
+
+
+
+interface Fruit{
+	+void grow()
+	+void harvest()
+	+void plant()
+}
+note right  of Fruit: 抽象产品,水果
+
+class TropicalFruit{
+    -String name
+    +void grow()
+ 	+void harvest()
+ 	+void plant()
+ }
+Fruit <|... TropicalFruit:实现
+TropicalGardener .>TropicalFruit:创建
+note bottom  of TropicalFruit: 水果的具体产品,热带水果,属于热带这个产品族,使用时被热带园丁这个工厂创建
+
+
+ class NorthernFruit {
+    -String name
+    +void grow()
+ 	+void harvest()
+ 	+void plant()
+ }
+NorthernFruit ..|> Fruit  :实现
+NorthernGardener .>NorthernFruit:创建
+note top  of NorthernFruit: 水果的具体产品,北方水果,属于北方这个产品族,使用时被北方园丁这个工厂创建
+
+
+
+@enduml
