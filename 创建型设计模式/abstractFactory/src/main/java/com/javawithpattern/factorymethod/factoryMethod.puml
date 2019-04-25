@@ -1,0 +1,57 @@
+@startuml
+
+
+skinparam classAttributeIconSize 0
+
+interface Fruit{
+	+void grow()
+	+void harvest()
+	+void plant()
+}
+note left  of Fruit: 抽象产品,水果
+
+class Grape implements Fruit{
+     +void grow()
+ 	+void harvest()
+ 	+void plant()
+ }
+note bottom  of Grape: 抽象产品:水果的具体产品,葡萄
+
+ class Apple implements Fruit{
+    -int treeAge
+    +void grow()
+ 	+void harvest()
+ 	+void plant()
+ }
+note bottom  of Apple: 抽象产品:水果的具体产品,苹果
+
+ class StrawBerry implements Fruit{
+     +void grow()
+ 	+void harvest()
+ 	+void plant()
+ }
+note bottom  of StrawBerry: 抽象产品:水果的具体产品,草莓
+
+interface FruitGardener{
+   +Fruit factory()
+ }
+note right : 抽象工厂类
+
+Fruit <. FruitGardener:创建
+
+class AppleGardener implements FruitGardener{
++Fruit factory()
+}
+note bottom of AppleGardener : 具体工厂类,用来创建对应的产品实例
+
+class GrapeGardener implements FruitGardener{
++Fruit factory()
+}
+note bottom of GrapeGardener : 具体工厂类,用来创建对应的产品实例
+
+class StrawBerryGardener implements FruitGardener{
++Fruit factory()
+}
+note bottom of StrawBerryGardener : 具体工厂类,用来创建对应的产品实例
+
+@enduml
