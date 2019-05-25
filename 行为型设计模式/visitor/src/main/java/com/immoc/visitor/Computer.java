@@ -1,5 +1,8 @@
 package com.immoc.visitor;
 
+/**
+ * @author xuyuansheng
+ */
 public class Computer implements ComputerPart {
 
     ComputerPart[] parts;

@@ -1,10 +1,12 @@
 package com.immoc.strategy;
 
 /**
- * Created by xu on 2017/9/9.
+ *
+ * @author xu
+ * @date 2017/9/9
  */
-public class RedheadDuck extends Duck {
-    public RedheadDuck() {
+public class RedheadAbstractDuck extends AbstractDuck {
+    public RedheadAbstractDuck() {
         super.setFlyingStrategy(new FlyingNoWay());
     }
 

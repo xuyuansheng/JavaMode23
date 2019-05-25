@@ -7,6 +7,7 @@ import java.util.Set;
 
 /**
  *  多重标准且关系过滤器
+ * @author xuyuansheng
  */
 public class AndCriteria implements Criteria<Person> {
 

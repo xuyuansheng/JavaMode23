@@ -1,11 +1,13 @@
 package com.immoc.strategy;
 
 /**
- * Created by xu on 2017/9/9.
+ *
+ * @author xu
+ * @date 2017/9/9
  * 鸭子的抽象类,所有鸭子的父类
  * 鸭子的行为 : 显示 和 鸣叫
  */
-public abstract class Duck {
+public abstract class AbstractDuck {
     /**
      * 通用的行为,直接实现
      */
@@ -25,8 +27,8 @@ public abstract class Duck {
         this.flyingStrategy.performFly();
     }
 
-    ;
-    //为飞行能力提供的策略
+
+    /** //为飞行能力提供的策略 */
     private FlyingStrategy flyingStrategy;
 
     public void setFlyingStrategy(FlyingStrategy flyingStrategy) {

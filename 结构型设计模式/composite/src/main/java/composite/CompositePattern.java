@@ -1,24 +1,27 @@
 package composite;
 
+/**
+ * @author xuyuansheng
+ */
 public class CompositePattern {
 
 
     public static void main(String[] args) {
         Composite root = new Composite("root");
-        root.Add(new Leaf("Leaf A"));
-        root.Add(new Leaf("Leaf B"));
+        root.add(new Leaf("Leaf A"));
+        root.add(new Leaf("Leaf B"));
 
         Composite compX = new Composite("Composite X");
-        compX.Add(new Leaf("Leaf XA"));
-        compX.Add(new Leaf("Leaf XB"));
-        root.Add(compX);
+        compX.add(new Leaf("Leaf XA"));
+        compX.add(new Leaf("Leaf XB"));
+        root.add(compX);
 
         Composite compXY = new Composite("Composite XY");
-        compXY.Add(new Leaf("Leaf XYA"));
-        compXY.Add(new Leaf("Leaf XYB"));
-        compX.Add(compXY);
-
-        root.Display(1);//根节点名称前面放一个 -
+        compXY.add(new Leaf("Leaf XYA"));
+        compXY.add(new Leaf("Leaf XYB"));
+        compX.add(compXY);
+    /** 根节点名称前面放一个 - */
+        root.display(1);
     }
 
 }

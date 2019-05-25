@@ -2,6 +2,7 @@ package com.immoc.singleton;
 
 /**
  * 懒加载形式的线程安全的单例
+ * @author xuyuansheng
  */
 public class IdlerSingletonSynchronized {
 
@@ -25,8 +26,9 @@ public class IdlerSingletonSynchronized {
     public IdlerSingletonSynchronized getInstanceDoubleCheck() {
         if(instance==null){
             synchronized (IdlerSingletonSynchronized.class){
-                if(instance==null)
-                instance = new IdlerSingletonSynchronized();
+                if(instance==null) {
+					instance = new IdlerSingletonSynchronized();
+				}
             }
         }
         return instance;

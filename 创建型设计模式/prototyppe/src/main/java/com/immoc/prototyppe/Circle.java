@@ -1,6 +1,9 @@
 package com.immoc.prototyppe;
 
-public class Circle extends Shape {
+/**
+ * @author xuyuansheng
+ */
+public class Circle extends AbstractShape {
     public Circle() {
         super.type = "圆形";
     }

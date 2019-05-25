@@ -2,10 +2,11 @@ package decorator;
 
 /**
  * 装饰类的实现类
+ * @author xuyuansheng
  */
-public class RedShapeDecorator extends ShapeDecorator {
+public class RedAbstractShapeDecorator extends AbstractShapeDecorator {
 
-    public RedShapeDecorator(Shape decoratedShape) {
+    public RedAbstractShapeDecorator(Shape decoratedShape) {
         super(decoratedShape);
     }
 

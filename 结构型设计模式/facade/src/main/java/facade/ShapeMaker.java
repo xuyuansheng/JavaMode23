@@ -2,6 +2,7 @@ package facade;
 
 /**
  * 外观类，隐藏形状接口的不同实现的使用复杂性，在此处统一暴露出去
+ * @author xuyuansheng
  */
 public class ShapeMaker {
 

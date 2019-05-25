@@ -3,6 +3,7 @@ package com.javawithpattern.factorymethod;
 
 /**
  * 苹果
+ * @author xuyuansheng
  */
 public class Apple implements Fruit {
 

@@ -2,9 +2,11 @@ package com.immoc.factory;
 
 /**
  * 需要生产的具体对象，属于第一个类别TargetInterface
+ * @author xuyuansheng
  */
 public class TargetObj2 implements TargetInterface {
-    public void method() {
+    @Override
+	public void method() {
         System.out.println("生成的目标对象 二");
     }
 }

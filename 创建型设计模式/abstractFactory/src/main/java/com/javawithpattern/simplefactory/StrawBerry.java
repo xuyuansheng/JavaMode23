@@ -2,6 +2,7 @@ package com.javawithpattern.simplefactory;
 
 /**
  * 草莓
+ * @author xuyuansheng
  */
 public class StrawBerry implements Fruit {
 	@Override

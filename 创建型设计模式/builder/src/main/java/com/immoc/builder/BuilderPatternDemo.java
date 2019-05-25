@@ -1,5 +1,8 @@
 package com.immoc.builder;
 
+/**
+ * @author xuyuansheng
+ */
 public class BuilderPatternDemo {
 
     public static void main(String[] args) {

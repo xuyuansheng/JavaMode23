@@ -2,6 +2,7 @@ package com.javawithpattern.simplefactory;
 
 /**
  * 苹果
+ * @author xuyuansheng
  */
 public class Apple implements Fruit {
 

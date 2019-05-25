@@ -2,8 +2,9 @@ package com.immoc.prototyppe;
 
 /**
  * 正方形
+ * @author xuyuansheng
  */
-public class Square extends Shape {
+public class Square extends AbstractShape {
 
 
     public Square() {

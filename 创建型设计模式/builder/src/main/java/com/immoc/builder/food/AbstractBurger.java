@@ -7,8 +7,9 @@ import com.immoc.builder.packing.Wrapper;
 /**
  * 汉堡包食品
  * 先装配好包装类型为 ： 纸包装
+ * @author xuyuansheng
  */
-public abstract class Burger implements Item {
+public abstract class AbstractBurger implements Item {
 
     @Override
     public Packing packing() {

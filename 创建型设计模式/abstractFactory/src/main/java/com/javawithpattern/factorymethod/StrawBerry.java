@@ -3,6 +3,7 @@ package com.javawithpattern.factorymethod;
 
 /**
  * 草莓
+ * @author xuyuansheng
  */
 public class StrawBerry implements Fruit {
 	@Override

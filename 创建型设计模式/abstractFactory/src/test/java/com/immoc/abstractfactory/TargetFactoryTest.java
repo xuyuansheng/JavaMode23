@@ -1,4 +1,4 @@
-package com.immoc.abstractFactory;
+package com.immoc.abstractfactory;
 
 import com.immoc.factory.TargetInterface;
 import com.immoc.factory.TargetInterface2;

@@ -1,10 +1,17 @@
 package filter;
 
+import java.util.Objects;
+
+/**
+ * @author xuyuansheng
+ */
 public class Person {
 
     private String name;
-    private String gender;//性别
-    private String maritalStatus;//婚姻状态
+    /** 性别 */
+    private String gender;
+    /** 婚姻状态 */
+    private String maritalStatus;
 
     public Person(String name, String gender, String maritalStatus) {
         this.name = name;
@@ -34,5 +41,24 @@ public class Person {
 
     public void setMaritalStatus(String maritalStatus) {
         this.maritalStatus = maritalStatus;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        Person person = (Person) o;
+        return Objects.equals(name, person.name) &&
+                Objects.equals(gender, person.gender) &&
+                Objects.equals(maritalStatus, person.maritalStatus);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, gender, maritalStatus);
     }
 }

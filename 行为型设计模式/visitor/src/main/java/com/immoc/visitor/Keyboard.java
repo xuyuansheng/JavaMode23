@@ -1,8 +1,12 @@
 package com.immoc.visitor;
 
+/**
+ * @author xuyuansheng
+ */
 public class Keyboard implements ComputerPart {
 
-    public void accept(ComputerPartVisitor computerPartVisitor) {
+    @Override
+	public void accept(ComputerPartVisitor computerPartVisitor) {
         computerPartVisitor.visit(this);
     }
 }

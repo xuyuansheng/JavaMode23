@@ -9,6 +9,7 @@ package com.javawithpattern.factorymethod;
 public interface FruitGardener {
 	/**
 	 * 工厂方法
+	 * @return
 	 */
 	Fruit factory();
 

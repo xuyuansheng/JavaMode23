@@ -1,10 +1,12 @@
 package com.immoc.strategy;
 
 /**
- * Created by xu on 2017/9/9.
+ *
+ * @author xu
+ * @date 2017/9/9
  */
-public class BigYellowDuck extends Duck {
-    public BigYellowDuck() {
+public class BigYellowAbstractDuck extends AbstractDuck {
+    public BigYellowAbstractDuck() {
         super.setFlyingStrategy(new FlyingNoWay());
     }
 

@@ -4,6 +4,7 @@ import java.util.*;
 
 /**
  * 多重标准或关系过滤器
+ * @author xuyuansheng
  */
 public class OrCriteria implements Criteria<Person> {
 

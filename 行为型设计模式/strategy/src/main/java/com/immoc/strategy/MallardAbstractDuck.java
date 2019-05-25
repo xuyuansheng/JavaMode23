@@ -1,11 +1,13 @@
 package com.immoc.strategy;
 
 /**
- * Created by xu on 2017/9/9.
+ *
+ * @author xu
+ * @date 2017/9/9
  */
-public class MallardDuck  extends  Duck{
+public class MallardAbstractDuck extends AbstractDuck {
 
-    public MallardDuck() {
+    public MallardAbstractDuck() {
         super.setFlyingStrategy(new FlyingNoWay());
     }
 

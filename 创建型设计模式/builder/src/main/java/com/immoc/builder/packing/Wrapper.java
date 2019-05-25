@@ -4,6 +4,7 @@ import com.immoc.builder.itfc.Packing;
 
 /**
  * 一个纸包装的类
+ * @author xuyuansheng
  */
 public class Wrapper implements Packing {
     @Override

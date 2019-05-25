@@ -2,6 +2,7 @@ package com.javawithpattern.simplefactory;
 
 /**
  * 葡萄
+ * @author xuyuansheng
  */
 public class Grape implements Fruit {
 	@Override

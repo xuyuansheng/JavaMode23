@@ -1,18 +1,21 @@
 package composite;
 
-public class Leaf extends Component{
+/**
+ * @author xuyuansheng
+ */
+public class Leaf extends AbstractComponent {
 
     public Leaf(String name) {
         super(name);
     }
 
     @Override
-    public void Add(Component c) {
+    public void add(AbstractComponent c) {
         System.out.println("Can not add to a leaf");
     }
 
     @Override
-    public void Remove(Component c) {
+    public void remove(AbstractComponent c) {
         System.out.println("Can not remove from a leaf");
     }
 
@@ -21,10 +24,11 @@ public class Leaf extends Component{
      * @param depth  名称前面的 - 个数
      */
     @Override
-    public void Display(int depth) {
+    public void display(int depth) {
         String temp = "";
-        for (int i = 0; i < depth; i++)
-            temp += '-';
+        for (int i = 0; i < depth; i++) {
+			temp += '-';
+		}
         System.out.println(temp + name);
     }
 }

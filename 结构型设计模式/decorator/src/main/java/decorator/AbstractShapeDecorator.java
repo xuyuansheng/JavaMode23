@@ -2,12 +2,13 @@ package decorator;
 
 /**
  * 把被装饰对象作为属性的同时又实现了该对象
+ * @author xuyuansheng
  */
-public abstract class ShapeDecorator implements Shape{
+public abstract class AbstractShapeDecorator implements Shape{
 
     protected Shape  decoratedShape;
 
-    public ShapeDecorator(Shape decoratedShape) {
+    public AbstractShapeDecorator(Shape decoratedShape) {
         this.decoratedShape = decoratedShape;
     }
 

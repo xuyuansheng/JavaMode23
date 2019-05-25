@@ -1,5 +1,8 @@
 package com.javawithpattern.simplefactory;
 
+/**
+ * @author xuyuansheng
+ */
 public interface Fruit {
 	/** 生长 */
 	void grow();

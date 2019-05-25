@@ -12,6 +12,7 @@ import java.util.stream.Collectors;
  * Meal表示一餐饭的内容
  * 里面有多个食品（Item） 放在List中
  *
+ * @author xuyuansheng
  */
 public class Meal {
 

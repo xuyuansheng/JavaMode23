@@ -2,8 +2,9 @@ package com.immoc.prototyppe;
 
 /**
  * 长方形
+ * @author xuyuansheng
  */
-public class Rectangle  extends Shape{
+public class Rectangle  extends AbstractShape {
 
     public Rectangle(){
         type = "长方形";

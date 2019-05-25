@@ -1,5 +1,8 @@
 package com.immoc.visitor;
 
+/**
+ * @author xuyuansheng
+ */
 public class VisitorPatternDemo {
 
     public static void main(String[] args) {

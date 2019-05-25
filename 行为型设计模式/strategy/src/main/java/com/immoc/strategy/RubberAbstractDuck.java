@@ -1,11 +1,13 @@
 package com.immoc.strategy;
 
 /**
- * Created by xu on 2017/9/9.
+ *
+ * @author xu
+ * @date 2017/9/9
  * 橡胶呀
  */
-public class RubberDuck extends Duck {
-    public RubberDuck() {
+public class RubberAbstractDuck extends AbstractDuck {
+    public RubberAbstractDuck() {
         super.setFlyingStrategy(new FlyingWithWing());
     }
 
