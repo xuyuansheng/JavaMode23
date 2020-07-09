@@ -1,4 +1,4 @@
-package com.immoc.prototyppe;
+package com.immoc.prototype;
 
 /**
  * 正方形
