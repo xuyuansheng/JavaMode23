@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.xuyuansheng.java</groupId>
+    <artifactId>mode23</artifactId>
+    <version>1</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>创建型设计模式/singleton</module>
+        <module>创建型设计模式/abstractFactory</module>
+        <module>创建型设计模式/builder</module>
+        <module>创建型设计模式/prototype</module>
+        <!--         -->
+        <module>结构型设计模式/adapter</module>
+        <module>结构型设计模式/bridge</module>
+        <module>结构型设计模式/composite</module>
+        <module>结构型设计模式/decorator</module>
+        <module>结构型设计模式/facade</module>
+        <module>结构型设计模式/filter</module>
+        <module>结构型设计模式/flyweight</module>
+        <!--        -->
+        <module>行为型设计模式/chainofresponsibility</module>
+        <module>行为型设计模式/state</module>
+        <module>行为型设计模式/strategy</module>
+        <module>行为型设计模式/observer</module>
+        <module>行为型设计模式/visitor</module>
+    </modules>
+
+</project>
